@@ -16,7 +16,7 @@ export default function Index(props) {
   return (
     <Layout>
       <HeroHeader />
-      <div className="flex flex-wrap justify-center gap-4 mt-8">
+      <div className="flex flex-wrap justify-center gap-4 mt-8 ">
         {categories.map(tag => (
           <Category
             tag={tag}
@@ -28,8 +28,8 @@ export default function Index(props) {
       </div>
       <Container>
         <div className="py-8">
-          <div className="my-8 text-3xl font-bold text-gray-900">
-            {!selectedTag ? 'Latest articles' : `${selectedTag} articles`}
+          <div className="my-8 text-lg font-bold text-light-blue">
+            {!selectedTag ? 'RECENT POSTS' : `${selectedTag} articles`}
           </div>
           <div className="grid gap-10 lg:gap-12 sm:grid-cols-2">
             {filteredArticles.map(article => (

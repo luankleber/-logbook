@@ -1,4 +1,5 @@
 export type Article = {
+  emoji: string;
   title: string;
   categories?: Array<string>;
   thumbnail: string;

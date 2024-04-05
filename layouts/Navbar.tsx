@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="fixed z-50 w-full bg-white border-b">
+    <div className="fixed z-50 w-full bg-regal-blue">
       <Container>
         <div className="flex justify-between w-full py-4">
           <Link href="/" passHref>

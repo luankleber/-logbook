@@ -3,7 +3,7 @@ import Socials from 'components/Socials';
 
 export default function Footer({ blog }) {
   return (
-    <footer className="py-16 bg-white border-t">
+    <footer className="py-16 bg-regal-blue border-t">
       <Container>
         <div className="md:flex md:items-center md:justify-between">
           <Socials />

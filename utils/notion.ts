@@ -22,6 +22,11 @@ export const getAllArticles = async databaseId => {
 const mapArticleProperties = article => {
   const { id, properties } = article;
 
+  let emoji = '';
+  if (properties?.emoji) {
+    emoji = properties.emoji.rich_text[0]?.plain_text || '';
+  }
+
   return {
     id: id,
     title: properties?.title.title[0].plain_text || '',
@@ -33,7 +38,8 @@ const mapArticleProperties = article => {
       '/image-background.png',
     publishedDate: properties.published?.date?.start,
     lastEditedAt: properties.LastEdited?.last_edited_time,
-    summary: properties?.summary.rich_text[0]?.plain_text ?? ''
+    summary: properties?.summary.rich_text[0]?.plain_text ?? '',
+    emoji: emoji
   };
 };
 

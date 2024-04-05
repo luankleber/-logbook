@@ -6,7 +6,14 @@ module.exports = {
     './lib/**/*.tsx'
   ],
   theme: {
-    extend: {}
+    fontFamily: {
+      sans: ['rubik', 'sans-serif'],
+    },
+    extend: { colors: {
+      'regal-blue': '#0e151b',
+      'light-blue': '#4dcfff'
+    },
+  }
   },
   plugins: [require('@tailwindcss/line-clamp')]
 };
