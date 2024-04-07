@@ -28,7 +28,7 @@ export default function Index(props) {
       </div>
       <Container>
         <div className="py-8">
-          <div className="my-8 text-lg font-bold text-light-blue">
+          <div className="my-8 text-lg font-bold text-light-blue uppercase">
             {!selectedTag ? 'RECENT POSTS' : `${selectedTag} articles`}
           </div>
           <div className="grid gap-10 lg:gap-12 sm:grid-cols-2">

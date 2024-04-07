@@ -21,7 +21,7 @@ export default function HeroHeader({ blog }: any) {
           <div className="mt-4 text-3xl font-bold text-white">
             {siteData?.headerTitle} 
           </div>
-          <div className="max-w-md mx-auto mt-2 text-lg  text-white">
+          <div className="max-w-md mx-auto mt-2 text-lg  text-gray-300">
             {siteData?.headerDescription}
           </div>
           {/* <div className="mt-12">

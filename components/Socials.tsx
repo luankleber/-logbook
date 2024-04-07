@@ -21,7 +21,7 @@ export default function Socials() {
   ];
 
   return (
-    <div className="flex justify-center space-x-6 md:order-2">
+    <div className="flex items-center justify-center space-x-6 md:order-2">
       {socials.map(item => (
         <a
           key={item.name}
@@ -31,13 +31,15 @@ export default function Socials() {
           rel="noreferrer"
         >
           <span className="sr-only">{item.name}</span>
-          <Image
-            src={item.icon}
-            alt="social-icon"
-            width={24}
-            height={24}
-            objectFit="cover"
-          />
+          <div className="flex items-center align-middle">
+            <Image
+              src={item.icon}
+              alt="social-icon"
+              width={24}
+              height={24}
+              objectFit="cover"
+            />
+          </div>
         </a>
       ))}
     </div>
